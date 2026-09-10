@@ -1,5 +1,5 @@
 # Exact versions used in the recorded publication re-execution (Python 3.13.5).
 # This is a reproduction pin set, not a claim that these are the newest versions.
-numpy==2.3.5
+numpy==2.5.3
 scipy==1.17.0
 pandas==2.2.3
