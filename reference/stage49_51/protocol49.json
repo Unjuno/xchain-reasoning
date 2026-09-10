@@ -1,0 +1,21 @@
+{
+ "task":"Accuracy of a visible output hole using exterior graphical workspace; not compression or same-model fidelity",
+ "stage":49,
+ "training":false,
+ "prior":"theta ~ N(0,(tau I + signed weighted Laplacian)^-1)",
+ "observations":"48 noisy external values; no observation at the query; all policies see the same available observations and graph",
+ "node_count":49,
+ "families":["chain","cross","tree","grid","grid_rewired"],
+ "tau":[0.05,0.5],
+ "noise_variance_to_latent_marginal_ratio":[0.25,1,4],
+ "seeds":[49001,49002,49003,49004,49005,49006,49007,49008,49009,49010],
+ "samples_per_condition":2048,
+ "sweeps":[1,2,4,8,16,32,64],
+ "primary":"Within paired condition, t16 true NMSE less than frozen exterior t16/reset2x8 (the latter cost the same full16 sweeps); 95% seed paired CI strictly positive and sign accuracy CI positive. Conditional mechanism test, not superiority to all algorithms.",
+ "secondary":"Compare to optimal posterior using only distance1 evidence, and to all-evidence direct Bayes solver; equal-update Gauss-Seidel; global calibrated mean. No information advantage as a compute-efficiency claim.",
+ "statistics":"10 graph/data seeds. Exact Gaussian expectations primary, MC secondary. Shared base random draws across noise/tau; these are not independent seeds.",
+ "control_notes":"Fewer observations in local Bayesian baseline; it diagnoses unused information, not equal-input general optimality. Different graph families induce different priors, so cross-family accuracy is NOT graph-only causal evidence.",
+ "stopping":"All specified conditions. No result-dependent seed replacement, stopping, or parameter adjustment.",
+ "work_accounting":"Jacobi vs reset uses same n*T node updates and 2*edge_count*T edge terms. Gaussian direct and scalar readout have different setup/cost, reported but no speed benchmark claimed.",
+ "timestamp_note":"Frozen locally before running evaluation, not externally preregistered."
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "stages": "01_08",
+    "public_note": "docs/history/stage01_08.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "STAGE4_CROSSDIMENSION_REPORT.md",
+        "sha256": "132fb9d01c462fe12cefb9d21c152f25a073a9aa83248f816af027e8790a0d60"
+      },
+      {
+        "name": "XCHAIN_STAGE5_CORRECTED_REACH_TRANSPORT_REPORT.md",
+        "sha256": "2bfd913d115f02402277c61fb68dfc41b0cd89f1e73c10c4c2e3226d868a96d3"
+      }
+    ]
+  },
+  {
+    "stages": "09",
+    "public_note": "docs/history/stage09.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "STAGE9_REBUILT_REPORT_JA.md",
+        "sha256": "ecec5e1a2a075892d6921024a2e432ca0702a1fb9bdcb22b92cfadae6ba90b0a"
+      }
+    ]
+  },
+  {
+    "stages": "10_15",
+    "public_note": "docs/history/stage10_15.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "XCHAIN_STAGE10_15_REPORT_JA.md",
+        "sha256": "472a10ceb22aa5b03ed8c510b8767dd2b55ae960e64a8742baf054bf451a39dd"
+      }
+    ]
+  },
+  {
+    "stages": "16_28",
+    "public_note": "docs/history/stage16_28.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "XCHAIN_STAGE16_28_REPORT_JA.md",
+        "sha256": "ecd27933b8e0eaa594b905e326d3d34608a9479d602fe0a744c9528f5daeeafb"
+      }
+    ]
+  },
+  {
+    "stages": "29",
+    "public_note": "docs/history/stage29.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "STAGE29_FULL_DEPTH_REPORT_JA.md",
+        "sha256": "91b959ae6fc2de6f28b12f7be30cb902cde04f634e31ed18b8bb82582532ba8b"
+      }
+    ]
+  },
+  {
+    "stages": "30",
+    "public_note": "docs/history/stage30.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "STAGE30_RELATIONAL_STATE_REPORT_JA.md",
+        "sha256": "5983fa661583a4a1c73c7f7eac640d5605c3aecbf4f71ee7d943781278d5e148"
+      }
+    ]
+  },
+  {
+    "stages": "31_34",
+    "public_note": "docs/history/stage31_34.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "XCHAIN_STAGE31_34_REPORT_JA.md",
+        "sha256": "f6815fc8b527f078e0b47b0ba226377b7f06100da2ace3bb8c14f4eb4b03470d"
+      }
+    ]
+  },
+  {
+    "stages": "35_38",
+    "public_note": "docs/history/stage35_38.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "REPORT_JA.md",
+        "sha256": "9289a4bf5f0f506f766c16a7027d261d8b67078f499c3a822b1bb993513a190a"
+      }
+    ]
+  },
+  {
+    "stages": "39_42",
+    "public_note": "docs/history/stage39_42.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "REPORT_JA.md",
+        "sha256": "8890088a296d06594ab98c9e81f844fcd9920db7407cfd87dff26d537b9f1e0f"
+      }
+    ]
+  },
+  {
+    "stages": "43_45",
+    "public_note": "docs/history/stage43_45.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "REPORT_JA.md",
+        "sha256": "38833440564dbe30d164fcbda2104cbf4c70dd4f68dd5f3ac3494a26f61b6cbc"
+      }
+    ]
+  },
+  {
+    "stages": "46_48",
+    "public_note": "docs/history/stage46_48.md",
+    "evidence_level": "Historical report; not re-executed during this publication.",
+    "sources": [
+      {
+        "name": "REPORT_JA.md",
+        "sha256": "efa4f6a680d052cc86565b05c711792e646ada8d4c5346091df4a0841e527ab6"
+      }
+    ]
+  },
+  {
+    "stages": "49_51",
+    "public_note": "docs/history/stage49_51.md",
+    "evidence_level": "Fully re-executed during this publication.",
+    "sources": [
+      {
+        "name": "REPORT_JA.md",
+        "sha256": "283219f556938ebba0bd3cc11d5a73814c986912f3511bb09264dd5fa3af07f4"
+      }
+    ]
+  }
+]

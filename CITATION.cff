@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Cite this research software by repository URL and the exact commit used."
+title: "XChain Reasoning: Graph-Structured External Workspace Experiments"
+type: software
+authors:
+  - family-names: "Unjuno"
+repository-code: "https://github.com/Unjuno/xchain-reasoning"
+url: "https://github.com/Unjuno/xchain-reasoning"
+license: Apache-2.0
+abstract: >-
+  Experimental synthetic-model research on graph-structured iterative inference,
+  selective computation, causal information propagation and true output accuracy.
+  Includes negative results and explicitly limited reproducibility claims.

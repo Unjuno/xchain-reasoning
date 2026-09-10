@@ -1,0 +1,12 @@
+{
+ "stage":50,
+ "reason":"Stage49 supports a gain in true output accuracy but relies on correct exterior relations. Test whether wrong exterior relations break it without touching direct query evidence.",
+ "seeds":[50001,50002,50003,50004,50005,50006,50007,50008,50009,50010],
+ "families":["chain","cross","tree","grid","grid_rewired"],
+ "n":49,"tau":0.05,"noise_ratio":[1,4],
+ "intervention":"Flip a nested 0/5/15/30/50 percent of non-query-adjacent edge signs only; input data, query-adjacent relations, diagonals, variances, degree and total work held fixed.",
+ "samples":2048,"steps":[1,2,4,8,16,32,64],
+ "analysis":"Compare t16 to t2 and correct t16 on the identical data. Full table by corruption, including any improvement cases. True-risk analytic expectation primary; MC paired confirmation.",
+ "stopping":"All pre-specified conditions, no stopping or seed replacements.",
+ "status":"Follow-up discovery experiment, distinct seeds from Stage49; locally frozen before evaluation."
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-11",
+  "scope": "Supplied research packages, not all raw historical state archives. CRC is integrity, not scientific replication. Not all packages are uploaded.",
+  "archives": [
+    {
+      "archive": "XCHAIN_RESEARCH_HANDOFF_2026-09-05(1).zip",
+      "sha256": "73d680e017d0e8d5ac3424761da03fdcf93072f9f535dcaf463bfd58ca856337",
+      "size_bytes": 4483971,
+      "entries": 298,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE10_15_EXPERIMENTS.zip",
+      "sha256": "7fa42d5c1fd28629284a328f3e75e74009a699e75109424783d1fbde231d4614",
+      "size_bytes": 4035026,
+      "entries": 132,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE16_28_EXPERIMENTS.zip",
+      "sha256": "ad58db66738ad008d42010621a3a94753d7da981a8233275040e38de0d13a8f3",
+      "size_bytes": 1010728,
+      "entries": 186,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE31_34_RESULTS_CODE.zip",
+      "sha256": "bf8aab481c43f9c9ab5df0f20a1b3358ae06893a2079469a5f9151aa09fa7723",
+      "size_bytes": 1190913,
+      "entries": 56,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE35_38_RESULTS_CODE.zip",
+      "sha256": "578e26283b93378feaa939501ccbc52e83fbcf12f221db91050e00641ece1f97",
+      "size_bytes": 1673414,
+      "entries": 50,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE39_42_RESULTS_CODE.zip",
+      "sha256": "20a31526c872a99ac0843539a2f138c1ffaa0815454d0d88f7ea6726822ed329",
+      "size_bytes": 4610760,
+      "entries": 93,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE43_45_RESULTS_CODE.zip",
+      "sha256": "b5f20356ace770d128d9fd0c2f55c4698926b28f22f82474eb6ac24330a56af7",
+      "size_bytes": 4459801,
+      "entries": 104,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE46_48_RESULTS_CODE.zip",
+      "sha256": "753da370848a1445d4a147c472dbd9d1e818926ee1b401164894a1285a8dfb5d",
+      "size_bytes": 570267,
+      "entries": 87,
+      "crc_ok": true
+    },
+    {
+      "archive": "XCHAIN_STAGE49_51_OUTPUT_ACCURACY_RESULTS_CODE.zip",
+      "sha256": "ecd1abc0b1e479c26678fffd702287779f2a6f082abdb699eab4e3f5921a3701",
+      "size_bytes": 857349,
+      "entries": 36,
+      "crc_ok": true
+    }
+  ]
+}
