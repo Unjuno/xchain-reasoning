@@ -1,5 +1,11 @@
 # XChain Reasoning
 
+## Stage 52–54 update
+
+Observation-only reliability checks, a failed per-request primary test, a conditional unlabeled-calibration followup, and an exact observability limit are now documented. No query labels enter selection; extra calibration data and diagnostic costs are explicit.
+
+[Report / 実験レポート](docs/STAGE52_54.md) · [Code](experiments/stage52/)
+
 Experimental research on **graph-structured external workspaces for iterative inference**.
 The central question is whether computation outside a visible output node can improve
 that output's **true task accuracy**, rather than merely reproduce an existing model faster.

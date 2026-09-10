@@ -27,3 +27,6 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python tools/check_publication.py
       - run: python tools/reproduce.py --quick --out runs/ci-smoke
+      - run: python experiments/stage52/run.py --quick --out runs/ci-stage52
+      - run: python experiments/stage52/followup.py --quick --out runs/ci-stage53
+      - run: python experiments/stage52/blind_spot.py --quick --out runs/ci-stage54

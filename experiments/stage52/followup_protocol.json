@@ -1,0 +1,17 @@
+{
+  "stage": 53,
+  "title": "Independent unlabeled calibration under unseen noise",
+  "origin": "Prespecified secondary batch32 result in Stage52 motivated this new-seed followup. Stage52 primary FAIL remains unchanged.",
+  "seeds": [63001,63002,63003,63004,63005,63006,63007,63008,63009,63010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.25,8.0],
+  "tau": 0.05,
+  "corruptions": ["intact","flip15","flip50","coherent50"],
+  "samples_per_condition": 1024,
+  "gates": [0.0,0.125,0.25,0.5,0.75,1.0],
+  "steps": 16,
+  "unlabeled_calibration_sizes": [1,4,16,32,128],
+  "primary": "32 independent unlabeled fields from the SAME graph, noise and corruption regime; select minimum average LOO NLPD gate, freeze it for disjoint test observations. New noise is supplied, not estimated. Same corrupt gain and intact noninferiority criterion as Stage52.",
+  "scope": "Not single-request label-free inference, no reuse across changing regimes, all calibration acquisition and computation are additional cost. No graph is held out from a fitted selector because there is no fitted selector.",
+  "statistics": "10 independent graph/input seed blocks, paired t intervals. Other calibration sizes exploratory; do not select size from test results."
+}

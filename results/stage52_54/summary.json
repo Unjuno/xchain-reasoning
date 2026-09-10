@@ -1,0 +1,81 @@
+{
+  "stage52_primary": {
+    "corrupt_gain": {
+      "mean": 0.014764640057242883,
+      "low": 0.009865107603930985,
+      "high": 0.01966417251055478,
+      "standard_uncertainty": 0.0021658674003230426,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "intact_gain": {
+      "mean": -0.00519445173289188,
+      "low": -0.0054230204189288315,
+      "high": -0.004965883046854929,
+      "standard_uncertainty": 0.00010104014424630896,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "criteria": "Corrupt sign-gain CI lower > 0 AND intact CI lower > -0.005",
+    "status": "FAIL",
+    "scope": "Known Gaussian family and noise; no computational-efficiency claim."
+  },
+  "stage53_primary": {
+    "corrupt_gain": {
+      "mean": 0.009121607744661753,
+      "low": 0.007100772057539656,
+      "high": 0.01114244343178385,
+      "standard_uncertainty": 0.000893322409404304,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "intact_gain": {
+      "mean": -0.00023983278033713474,
+      "low": -0.0007823722222505924,
+      "high": 0.000302706661576323,
+      "standard_uncertainty": 0.00023983278033713472,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "status": "PASS"
+  },
+  "stage54": {
+    "cases": 100,
+    "max_observation_covariance_difference": 0.0,
+    "max_diagnostic_difference": 0.0,
+    "gate_mismatch_count": 0,
+    "max_opposite_prediction_error": 0.0,
+    "paired_world_accuracy": 0.5,
+    "scope": "Trusted query-incident relations REMOVED. Same observable law, opposite query labels. Not an outer-only corruption test."
+  },
+  "scope": "Compact primary results and strong negative control. All means and secondary comparisons regenerate in the run directories.",
+  "stage53_strong_negative_control": {
+    "corruption": "flip50",
+    "calibration_size": 32,
+    "baseline": "fixed_0",
+    "acc_gain": {
+      "mean": -0.0032726644902515644,
+      "low": -0.005754173916743967,
+      "high": -0.0007911550637591624,
+      "standard_uncertainty": 0.0010969659700490776,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "acc_gain_mc": {
+      "mean": -0.004296874999999989,
+      "low": -0.007788586482494298,
+      "high": -0.00080516351750568,
+      "standard_uncertainty": 0.001543531784579985,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    },
+    "nmse_decrease": {
+      "mean": 0.003761903453890858,
+      "low": 0.0011409566054299512,
+      "high": 0.006382850302351765,
+      "standard_uncertainty": 0.0011586051100087548,
+      "coverage_factor": 2.262157162798205,
+      "seed_blocks": 10
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "dtype": "float64",
+  "threads": 1,
+  "batch": 1024,
+  "clock": "not fixed or measured",
+  "timing": "single diagnostic logs, NOT speed benchmarks"
+}
