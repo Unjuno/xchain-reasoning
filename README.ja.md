@@ -1,5 +1,11 @@
 # XChain Reasoning
 
+## Stage 52〜54の追加結果
+
+正解ラベルなしの関係評価を追加しました。単一要求の主試験はFAIL、独立した32観測場を使う追試は条件付きPASSです。識別不能な反例、追加データと診断の費用、強い対照で残る失敗も記録しています。
+
+[Report / 実験レポート](docs/STAGE52_54.md) · [Code](experiments/stage52/)
+
 **出力点の外側に置いたグラフ状の作業状態を使い、反復計算によって真の出力精度を上げられるか**を調べる研究リポジトリです。
 
 [English](README.md) · [研究履歴](docs/RESEARCH_HISTORY.md) · [理論](docs/THEORY.md) · [再現手順](docs/REPRODUCIBILITY.md)

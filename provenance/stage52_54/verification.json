@@ -1,0 +1,26 @@
+{
+  "base_tree_verified": "3304f74ce0a34acf194d646ebe78035fcf20eae8",
+  "baseline_unit_tests": 15,
+  "all_unit_tests": 23,
+  "rerun": {
+    "52": {
+      "rows": 5600,
+      "max_numeric_difference": 0.0,
+      "categorical_equal": true,
+      "frozen_sources_match": true
+    },
+    "53": {
+      "rows": 4400,
+      "max_numeric_difference": 0.0,
+      "categorical_equal": true,
+      "frozen_sources_match": true
+    },
+    "54": {
+      "rows": 100,
+      "max_numeric_difference": 0.0,
+      "categorical_equal": true,
+      "frozen_sources_match": true
+    }
+  },
+  "scope": "Full numerical regeneration on the same environment; time logs not expected to match. No privacy or floating-point formal guarantee."
+}

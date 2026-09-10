@@ -1,0 +1,54 @@
+{
+  "stage": 52,
+  "title": "Label-free selection of exterior message strength",
+  "status_at_creation": "frozen before new evaluation; no outcome pilot",
+  "seeds": [
+    62001,
+    62002,
+    62003,
+    62004,
+    62005,
+    62006,
+    62007,
+    62008,
+    62009,
+    62010
+  ],
+  "families": [
+    "chain",
+    "cross",
+    "tree",
+    "grid",
+    "grid_rewired"
+  ],
+  "noise_ratios": [
+    1.0,
+    4.0
+  ],
+  "tau": 0.05,
+  "corruptions": [
+    "intact",
+    "flip15",
+    "flip50",
+    "coherent50"
+  ],
+  "samples_per_condition": 1024,
+  "gates": [
+    0.0,
+    0.125,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "steps": 16,
+  "selection": "Each query observation vector individually selects gate with minimum mean Gaussian leave-one-observed-node-out negative log predictive density. No query truth, corruption labels or true covariance passed to selector. Ties select first (smallest) gate.",
+  "secondary": "Marginal evidence score, held-out squared error and an independent 32-field unlabeled calibration batch. Exact Bayes and optimal-neighbor inference are oracle diagnostic controls, not available policies.",
+  "primary_criteria": "LOO gate versus fixed full messages: sign accuracy gain lower 95% paired seed-t bound > 0 in flip50; intact lower bound > -0.005 (0.5 pp noninferiority). Both required. Report true NMSE independently, regardless of outcome.",
+  "statistics": "Average over family and noise within each seed, then 10-seed paired Student-t intervals. Samples, configurations and policies are not independent seeds. Primary is an intersection-union criterion; secondary comparisons are exploratory.",
+  "separate_replication": "Only after main results, a separately frozen secondary block may vary noise/family; no retuning main protocol.",
+  "cost": "6 candidate priors, 12 Cholesky factorizations (49/48 each) per graph/noise configuration, 6 dense observed precision matrices, per-observation LOO scores, selected 16-step inference. Report cache build, selection and selected-inference work separately; no free compute assumption or speed claim.",
+  "audit": "LOO versus brute-force deletion, query edge invariance, coherent cycle balance, frozen-code SHA, selection independent of truth, same random inputs across corruption, no global RNG use.",
+  "scope": "Known Gaussian family and supplied observation noise variances; no neural training, no LLM claim, no storage compression or general safety guarantee. Local frozen protocol, not external preregistration.",
+  "scoring": "Primary Rao-Blackwellized conditional accuracy given observations using true query posterior only in evaluator; report sampled-truth accuracy too. Selection code has no true joint covariance/latent input."
+}
