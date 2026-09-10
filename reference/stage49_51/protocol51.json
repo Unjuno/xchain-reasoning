@@ -1,0 +1,15 @@
+{
+ "stage":51,
+ "reason":"Stage50 shows exterior relation errors can make true sign accuracy worse with more iterations even while raw MSE improves. Test whether a scalar suppression of unreliable exterior messages can help, and whether it harms intact relations.",
+ "model":"Original 16-step recurrence, multiply only non-query-adjacent assumed off-diagonal edges by a shared gate. No new observations or target labels at inference.",
+ "gates":[0,0.125,0.25,0.5,0.75,1],
+ "fit":"Choose one gate by maximum empirical calibration classification accuracy, another by minimum raw normalized MSE. 5 calibration seeds, only 50% corrupted exterior edges. Ties favor smaller gate.",
+ "calibration_seeds":[51001,51002,51003,51004,51005],
+ "test_seeds":[52001,52002,52003,52004,52005,52006,52007,52008,52009,52010],
+ "families":["chain","cross","tree","grid","grid_rewired"],
+ "noise_ratio":[1,4],"tau":0.05,"samples_per_condition":2048,
+ "test_corruption":[0,0.15,0.30,0.50],
+ "primary":"Classification-selected gate versus gate1 in heldout 50%-corruption condition. Positive seed paired CI. Report price of using unchanged gate at 0% corruption.",
+ "inference_work":"All gated policies nominally execute same 16 dense recurrence sweeps in this reference implementation; no online labels, gating reliability is NOT learned per-query.",
+ "status":"Exploratory adaptive branch, independent test generation frozen before running. No further gate tuning on test."
+}

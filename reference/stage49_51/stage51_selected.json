@@ -1,0 +1,13 @@
+{
+  "classification_gate": 0.0,
+  "mse_gate": 1.0,
+  "selection": "Only calibration labels, no exact population risks used in selection",
+  "train_seeds": [
+    51001,
+    51002,
+    51003,
+    51004,
+    51005
+  ],
+  "calibration_corruption": 0.5
+}

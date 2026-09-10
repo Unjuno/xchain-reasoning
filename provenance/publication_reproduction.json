@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-11",
+  "kind": "full re-execution of the supplied protocol with portable export code; not a new independent study",
+  "stages": {
+    "49": {
+      "rows": 5400,
+      "columns": 26,
+      "max_absolute_numeric_difference": 0.0,
+      "categorical_columns_match": true
+    },
+    "50": {
+      "rows": 3500,
+      "columns": 18,
+      "max_absolute_numeric_difference": 0.0,
+      "categorical_columns_match": true
+    },
+    "51": {
+      "rows": 2700,
+      "columns": 16,
+      "max_absolute_numeric_difference": 0.0,
+      "categorical_columns_match": true
+    }
+  },
+  "unit_tests": {
+    "count": 15,
+    "passed": 15
+  },
+  "limitations": [
+    "Earlier stages were not rerun during publication.",
+    "No runtime or energy advantage was measured.",
+    "Floating-point checks are numerical, not interval-arithmetic proofs."
+  ],
+  "gate_selection": {
+    "classification_gate": 0.0,
+    "mse_gate": 1.0,
+    "selection": "Only calibration labels, no exact population risks used in selection",
+    "train_seeds": [
+      51001,
+      51002,
+      51003,
+      51004,
+      51005
+    ],
+    "calibration_corruption": 0.5
+  },
+  "source_archive_sha256": "ecd1abc0b1e479c26678fffd702287779f2a6f082abdb699eab4e3f5921a3701",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

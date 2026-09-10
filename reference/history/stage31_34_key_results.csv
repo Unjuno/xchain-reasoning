@@ -1,0 +1,11 @@
+stage,metric,subset,estimate,ci_low,ci_high,verdict
+stage31,local_evaluation_reduction_vs_maxres,tanh/all/nq1,0.04273662917557808,0.026749670333130027,0.058460980500474435,FAIL
+stage32,local_evaluation_reduction_vs_maxres,stream/ring/alpha0.5/nq1,0.44070173676779023,0.4226532462284136,0.4581860117666411,PASS
+stage34,time_reduction_vs_global,ring/n128/fixed,0.1719633920317044,0.11272348523831022,0.22724808700724441,secondary benchmark
+stage34,time_reduction_vs_global,ring/n128/moving,-0.1158376252051121,-0.16181701304180351,-0.0716778906202713,secondary benchmark
+stage34,time_reduction_vs_global,ring/n512/fixed,0.40754522242814595,0.3408847229017802,0.4674639237418109,secondary benchmark
+stage34,time_reduction_vs_global,ring/n512/moving,-0.05666861410234625,-0.1412213045599866,0.021619596858583612,secondary benchmark
+stage34,time_reduction_vs_global,random/n128/fixed,-1.226336323808451,-1.4130646552470947,-1.0540574476241633,secondary benchmark
+stage34,time_reduction_vs_global,random/n128/moving,-1.3325092486309593,-1.5015962466339738,-1.174851118468685,secondary benchmark
+stage34,time_reduction_vs_global,random/n512/fixed,-4.638850925251419,-5.12782527017381,-4.188894649456431,secondary benchmark
+stage34,time_reduction_vs_global,random/n512/moving,-5.158227497273396,-5.566627325568296,-4.775227377456222,secondary benchmark

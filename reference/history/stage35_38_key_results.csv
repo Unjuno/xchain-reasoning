@@ -1,0 +1,58 @@
+stage,condition,candidate,baseline,saving,ci_low,ci_high,status
+36,ring512_alpha.5_fixed,incremental_dual,exact_weighted,0.5258027055903098,0.3047091954470954,0.6765913304864359,primary FAIL: must beat both exact_weighted and global
+36,ring512_alpha.5_fixed,incremental_dual,global_sync,-1.3535842096157196,-2.055033454179721,-0.8131908258398353,primary FAIL: must beat both exact_weighted and global
+36,ring512_alpha.5_fixed,incremental_dual,woodbury_weighted,0.31363309744482937,0.15274912936201435,0.4439669037242323,primary FAIL: must beat both exact_weighted and global
+37,random128_alpha0.5_fixed,matrixfree_reuse128,global_sync,-1.0178394556141317,-1.3939584585382438,-0.7008131674596014,prespecified control
+37,random128_alpha0.5_moving,matrixfree_reuse128,global_sync,-1.056643876957569,-1.832389094222644,-0.4933626334230523,prespecified control
+37,random128_alpha0.9_fixed,matrixfree_reuse128,global_sync,-0.6429338260933417,-0.9644264051488125,-0.3740558311815352,prespecified control
+37,random128_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.5653049940593713,-0.8597354350671449,-0.3174883256116192,prespecified control
+37,ring128_alpha0.5_fixed,matrixfree_reuse128,global_sync,-0.5143499689467226,-0.7102515944365884,-0.3408879932688569,prespecified control
+37,ring128_alpha0.5_moving,matrixfree_reuse128,global_sync,-0.9092939598413559,-1.1616277325744093,-0.6864159217392904,prespecified control
+37,ring128_alpha0.9_fixed,matrixfree_reuse128,global_sync,-0.31002299476984496,-0.40671497868711426,-0.21997723264981772,prespecified control
+37,ring128_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.5506372454069073,-0.8009312292196717,-0.33512919751242265,prespecified control
+37,random512_alpha0.5_fixed,matrixfree_reuse128,global_sync,-0.6601320646156468,-1.1170689681878523,-0.30181799146774924,prespecified control
+37,random512_alpha0.5_moving,matrixfree_reuse128,global_sync,-0.8818090446081375,-1.518551847076326,-0.4060481957041375,prespecified control
+37,random512_alpha0.9_fixed,matrixfree_reuse128,global_sync,-0.3118032357531848,-0.4203701897423766,-0.2115346701585208,prespecified control
+37,random512_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.35971274738854975,-0.5201553283739977,-0.2162038450297501,prespecified control
+37,ring512_alpha0.5_fixed,matrixfree_reuse128,global_sync,0.19062046848154446,0.10315307961676068,0.26955736686802667,primary
+37,ring512_alpha0.5_moving,matrixfree_reuse128,global_sync,-0.2757124992466502,-0.6136254909449821,-0.008562637282744534,prespecified control
+37,ring512_alpha0.9_fixed,matrixfree_reuse128,global_sync,0.047246005085198606,-0.08838479696024892,0.16597495907574045,prespecified control
+37,ring512_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.2621145201202082,-0.4999688412576724,-0.06197743451966864,prespecified control
+37,random2048_alpha0.5_fixed,matrixfree_reuse128,global_sync,-0.3683413166736833,-0.420553285438543,-0.3180483816474706,prespecified control
+37,random2048_alpha0.5_moving,matrixfree_reuse128,global_sync,-0.41627725347935773,-0.6235268769440971,-0.23548386368481422,prespecified control
+37,random2048_alpha0.9_fixed,matrixfree_reuse128,global_sync,-0.14902416476961955,-0.2536451805685487,-0.05313413371538167,prespecified control
+37,random2048_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.2617217267316865,-0.37507901114961717,-0.15770926819388098,prespecified control
+37,ring2048_alpha0.5_fixed,matrixfree_reuse128,global_sync,0.5935163082727708,0.5192068399173335,0.6563408023279949,prespecified control
+37,ring2048_alpha0.5_moving,matrixfree_reuse128,global_sync,0.028370801681647184,-0.18593842222922108,0.2039525144566957,prespecified control
+37,ring2048_alpha0.9_fixed,matrixfree_reuse128,global_sync,0.1715724081490867,0.06084399938701757,0.26924571158363053,prespecified control
+37,ring2048_alpha0.9_moving,matrixfree_reuse128,global_sync,-0.13278818201646692,-0.2325660401587939,-0.04108747402358559,prespecified control
+38,random512_alpha0.5_fixed,matrixfree_reuse128,global_sync,0.04164609852911716,0.017878995869142766,0.06483804276515615,same-data timing followup
+38,random512_alpha0.5_fixed,matrixfree_reuse128,exact_weighted,0.9565025691130062,0.9525280184184413,0.9601443539802901,same-data timing followup
+38,random512_alpha0.5_fixed,matrixfree_reuse128,woodbury_weighted,0.899145286956192,0.8948155633049291,0.903296785506049,same-data timing followup
+38,random512_alpha0.5_fixed,matrixfree_reuse128,incremental_dual,0.8920157410586617,0.8878138398697473,0.8960602612160753,same-data timing followup
+38,random512_alpha0.5_fixed,matrixfree_reuse128,matrixfree_cold128,-0.1340649991350975,-0.17990120455900205,-0.09000941544421992,same-data timing followup
+38,random512_alpha0.5_fixed,matrixfree_reuse128,matrixfree_norepair,-0.4033542141578257,-0.43514297062842133,-0.3722695861668506,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,global_sync,0.4738519712378183,0.4162881636410425,0.5257390189358949,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,exact_weighted,0.86699574978085,0.8532954359609607,0.8794166310214401,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,woodbury_weighted,0.8212876818829892,0.8018609915601255,0.8388096675246695,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,incremental_dual,0.7576780745784726,0.7363171317135324,0.7773085679718773,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,matrixfree_cold128,0.19693271702101434,0.14356502102988233,0.2469748704486855,same-data timing followup
+38,ring512_alpha0.5_fixed,matrixfree_reuse128,matrixfree_norepair,0.28893357753102156,0.21817190083804205,0.35329075828202994,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,global_sync,0.18997964611091367,0.1630617731112941,0.2160317779320985,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,exact_weighted,0.8083010664738833,0.8034325582278509,0.8130489933442414,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,woodbury_weighted,0.7600687177643095,0.7459813244412534,0.7733748510079561,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,incremental_dual,0.8571775002055315,0.8476357216104431,0.8661217270665782,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,matrixfree_cold128,-0.11107770390590233,-0.1494268776608978,-0.07400800182176548,same-data timing followup
+38,ring512_alpha0.5_moving,matrixfree_reuse128,matrixfree_norepair,-0.10188354982713643,-0.12659851103393227,-0.07771077760911616,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,global_sync,0.644613556061573,0.5813330577843461,0.6983293596891053,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,exact_weighted,0.8844059038105293,0.8645164047709409,0.9013755499234445,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,woodbury_weighted,0.8209538171989058,0.7890265570598634,0.8480494268430785,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,incremental_dual,0.6704826784240878,0.6171099457100466,0.7164155506208663,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,matrixfree_cold128,0.5035153772161796,0.43198787729888255,0.5660357045046787,same-data timing followup
+38,ring2048_alpha0.5_fixed,matrixfree_reuse128,matrixfree_norepair,0.6416416439238525,0.5682467543542206,0.7025599398158124,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,global_sync,0.1673188715810653,0.14368857826778514,0.19029707647429128,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,exact_weighted,0.7433142254425303,0.734354292393798,0.751971949955837,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,woodbury_weighted,0.6182306910757622,0.6026547325414047,0.6331960710928124,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,incremental_dual,0.6588141472081769,0.6490199180824928,0.6683350647440911,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,matrixfree_cold128,-0.2189252249354534,-0.25137203905183747,-0.18731972396451946,same-data timing followup
+38,ring2048_alpha0.5_moving,matrixfree_reuse128,matrixfree_norepair,0.14471017968848598,0.12678886043719473,0.16226369135103347,same-data timing followup
