@@ -1,0 +1,16 @@
+{
+  "stage": 57,
+  "title": "One trusted query-edge anchor plus unlabeled spectral relation reconstruction",
+  "status_at_creation": "frozen before Stage57 evaluation; K=512 chosen from Stage56-seed exploratory gauge-recovery diagnostics",
+  "seeds": [67001,67002,67003,67004,67005,67006,67007,67008,67009,67010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.25,1.0,4.0,8.0],
+  "tau": 0.05,
+  "steps": 16,
+  "calibration_size": 512,
+  "candidate_corruption": "flip 50% of all graph edge signs, including query-incident edges; support and magnitudes remain correct",
+  "trusted_information": "exact sign of one deterministic query-incident edge only (largest magnitude; tie by index)",
+  "repair_rule": "Estimate observed node gauge signs from the sign pattern of the top eigenvector of the centered calibration covariance. Use the one trusted query edge to orient the unobserved query gauge. Replace every candidate edge sign by the product of estimated endpoint gauges while retaining edge magnitudes.",
+  "primary": "Spectral+one-anchor repair must beat (lower 95% paired-seed bound >0) both the corrupted full-message model and an oracle local-only baseline that knows every true query-incident relation but disables exterior-exterior messages.",
+  "scope": "Calibration fields are additional unlabeled data/work. Graph support/magnitudes and one query-edge sign are trusted. This tests the balanced-sign Gaussian family; it does not establish generic relation learning."
+}

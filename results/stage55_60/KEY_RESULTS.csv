@@ -1,0 +1,10 @@
+stage,role,comparison,metric,mean,ci_low,ci_high,status
+55,primary,flip50 repair32 vs exterior-off,accuracy_pp,1.6568511045485963,1.2548357484925938,2.058866460604599,FAIL overall due intact degradation
+55,primary,intact repair32 vs full,accuracy_pp,-2.1945716094628094,-2.557058722347772,-1.832084496577847,FAIL noninferiority
+56,primary,flip50 conservative repair vs batch128 gate,accuracy_pp,1.8402415607224318,1.610060762547165,2.0704223588976984,PASS component
+56,primary,intact conservative repair vs full,accuracy_pp,-0.13925174929973702,-0.22438030724807387,-0.05412319135140014,PASS noninferiority criterion
+57,primary,spectral one-anchor repair vs corrupted full,accuracy_pp,21.648808812993455,19.454801802897006,23.842815823089904,PASS
+57,primary,spectral one-anchor repair vs oracle local-only,accuracy_pp,2.152904438816389,1.682307076423776,2.6235018012090014,PASS
+59,primary,all anchors vs one anchor at 10% error,accuracy_pp,2.115252286506254,1.9214986647002281,2.3090059083122805,PASS component
+59,primary,all anchors vs oracle local-only at 10% error,accuracy_pp,-0.36341942331489946,-0.9630311503161022,0.2361923036863033,FAIL overall
+60,primary,repaired exterior vs reconstructed local at 10% anchor error,accuracy_pp,2.685291505304276,2.45172279349249,2.9188602171160625,PASS
