@@ -1,0 +1,16 @@
+{
+  "stage": 59,
+  "title": "Robustness to imperfect trusted query-edge anchors",
+  "status_at_creation": "frozen before Stage59 evaluation",
+  "seeds": [69001,69002,69003,69004,69005,69006,69007,69008,69009,69010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.25,1.0,4.0,8.0],
+  "tau": 0.05,
+  "steps": 16,
+  "calibration_size": 512,
+  "anchor_error_rates": [0.0,0.05,0.10,0.20],
+  "anchor_replicates": 64,
+  "policies": "one_anchor uses the largest-magnitude query edge. all_query_anchors takes an edge-magnitude-weighted vote of all query-edge estimates of the query gauge; each trusted sign is independently flipped with the specified error rate. Observed gauges come from the top calibration-covariance eigenvector.",
+  "primary": "At anchor error rate 0.10, all_query_anchors must beat one_anchor with paired-seed lower 95% bound >0, and must beat the oracle local-only true-query-edge baseline with lower bound >0.",
+  "scope": "Anchor noise is synthetic and independent across query edges/replicates. This is robustness of the balanced-sign model, not a general fact-checking model."
+}

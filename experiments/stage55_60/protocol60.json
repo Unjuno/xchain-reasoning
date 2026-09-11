@@ -1,0 +1,17 @@
+{
+  "stage": 60,
+  "title": "Incremental value of repaired exterior information under noisy anchors",
+  "status_at_creation": "frozen before Stage60 evaluation",
+  "seeds": [70001,70002,70003,70004,70005,70006,70007,70008,70009,70010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.25,1.0,4.0,8.0],
+  "tau": 0.05,
+  "steps": 16,
+  "calibration_size": 512,
+  "anchor_error_rates": [0.0,0.05,0.10,0.20],
+  "anchor_replicates": 64,
+  "orientation": "Use the edge-magnitude-weighted vote of all query-incident noisy anchor signs combined with the spectral observed-node gauge estimate.",
+  "comparison": "For each realized inferred query orientation, compare the same reconstructed graph with exterior-exterior messages enabled versus disabled. Thus anchor errors and query-edge reconstruction are identical between policies.",
+  "primary": "At anchor error 0.10, full repaired exterior must beat reconstructed local-only with paired-seed lower 95% sign-accuracy bound >0.",
+  "scope": "This isolates incremental exterior value conditional on the same anchor-derived orientation. It does not compare against an oracle with true query-edge signs."
+}

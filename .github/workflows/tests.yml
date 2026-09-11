@@ -30,3 +30,9 @@ jobs:
       - run: python experiments/stage52/run.py --quick --out runs/ci-stage52
       - run: python experiments/stage52/followup.py --quick --out runs/ci-stage53
       - run: python experiments/stage52/blind_spot.py --quick --out runs/ci-stage54
+      - run: python experiments/stage55_60/run55.py --quick --out runs/ci-stage55
+      - run: python experiments/stage55_60/run56.py --quick --out runs/ci-stage56
+      - run: python experiments/stage55_60/run57.py --quick --out runs/ci-stage57
+      - run: python experiments/stage55_60/run58.py --quick --out runs/ci-stage58
+      - run: python experiments/stage55_60/run59.py --quick --out runs/ci-stage59
+      - run: python experiments/stage55_60/run60.py --quick --out runs/ci-stage60

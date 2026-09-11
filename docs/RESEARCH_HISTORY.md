@@ -2,9 +2,8 @@
 
 These are experiment identifiers, not 51 independent validated discoveries.
 The public history preserves failed hypotheses and superseded interpretations.
-Only Stage 49–51 is a maintained runnable export and was fully re-executed for
-this publication. Earlier entries are curated from the supplied reports; they
-are not all independently reproduced here. See [source hashes](../provenance/history_sources.json).
+Stages 49–60 have maintained runnable public source. Earlier entries are curated
+from supplied reports and are not all independently reproduced here. See [source hashes](../provenance/history_sources.json).
 
 | Stages | Question and result | Evidence level |
 |---|---|---|
@@ -20,6 +19,8 @@ are not all independently reproduced here. See [source hashes](../provenance/his
 | [43–45](history/stage43_45.md) | Fixed-density changes and local intervals | Historical report |
 | [46–48](history/stage46_48.md) | Learned recurrent models and decision fidelity | Historical report |
 | [49–51](history/stage49_51.md) | True output accuracy and relation corruption | Publication rerun |
+| [52–54](history/stage52_54.md) | Label-free reliability and observability limit | Audited runnable follow-up |
+| [55–60](history/stage55_60.md) | Relation repair, trusted anchors and incremental exterior value | Audited runnable follow-up |
 
 ## Corrections that control interpretation
 

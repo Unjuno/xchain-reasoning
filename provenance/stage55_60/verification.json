@@ -1,0 +1,28 @@
+{
+  "source_hashes": {
+    "docs/STAGE55_60.md": "f19cc8f40ab9d5ec498be379d39312241e7213244678aa63496141c1f3425132",
+    "experiments/stage55_60/protocol55.json": "c76f4ec63fe80fa79b11085655a406e91b05a80131d5b508f972edbb0d6651b8",
+    "experiments/stage55_60/protocol56.json": "bf3b26e5103df0499f35c72ea8b707eea434745a2777376b5ecdced0d1d97dbd",
+    "experiments/stage55_60/protocol57.json": "de03da061f4f7db0954273b55859fe534bad63c5f34325b4048d2f2cea20566e",
+    "experiments/stage55_60/protocol58.json": "cd1a64ada8489a87cc1596a18cebad71f8850776b498d1284d55cd830018df22",
+    "experiments/stage55_60/protocol59.json": "f1006d19f0548a4b8f0aeee6dc5d488164459aaff20210b936ab8be521789dd6",
+    "experiments/stage55_60/protocol60.json": "f668c729d48e59e9f480bae35341d887fdce58fd82dcecb912b2b19829873300",
+    "experiments/stage55_60/run55.py": "126868a5b6497ecc95ba920b4d78075ed64967cd62e694fdbad39701a0ea3ad1",
+    "experiments/stage55_60/run56.py": "bc9187b758ed00f77877ba510360bf10897f52d278e08460313fcc142414742e",
+    "experiments/stage55_60/run57.py": "d300b965c1cb01d08a0d701de06863f41f863096b912107716b7d58ac9657c15",
+    "experiments/stage55_60/run58.py": "8b9e14ca309d48283e7d5be0fd6b99abc6591938a87bb50c5c11e7b0c2818c32",
+    "experiments/stage55_60/run59.py": "e07bf021dfacf19049a03e51e6a10585d985ad1ad9f54b7a6c71b13004f3e71d",
+    "experiments/stage55_60/run60.py": "7fc1c7a2211114db1d3e18aff225076c147763d6600094e26f019c933100f309",
+    "tests/test_stage55_60.py": "3404cc90c4caa7016352383bf67aeca71646c6ce3f06144222adfff15ed5bb16"
+  },
+  "full_rerun_comparison": {
+    "55": {"rows": 9750, "max_numeric_difference": 0.0, "categorical_equal": true},
+    "56": {"rows": 5000, "max_numeric_difference": 0.0, "categorical_equal": true},
+    "57": {"rows": 1000, "max_numeric_difference": 0.0, "categorical_equal": true},
+    "58": {"rows": 1600, "max_numeric_difference": 0.0, "categorical_equal": true},
+    "59": {"rows": 102400, "max_numeric_difference": 0.0, "categorical_equal": true},
+    "60": {"rows": 102400, "max_numeric_difference": 0.0, "categorical_equal": true}
+  },
+  "unit_tests": "27/27 passed locally before publication",
+  "scope": "Stages 55-60 deterministic rerun in same software/container environment; not independent external replication."
+}

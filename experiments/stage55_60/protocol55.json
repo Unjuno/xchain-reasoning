@@ -1,0 +1,18 @@
+{
+  "stage": 55,
+  "title": "Unlabeled exterior relation sign repair from repeated fields",
+  "status_at_creation": "frozen before Stage55 evaluation",
+  "seeds": [65001,65002,65003,65004,65005,65006,65007,65008,65009,65010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.5,2.0,8.0],
+  "tau": 0.05,
+  "corruptions": ["intact","flip15","flip30","flip50","coherent50"],
+  "steps": 16,
+  "calibration_sizes": [4,8,16,32,64],
+  "gate_candidates": [0.0,0.125,0.25,0.5,0.75,1.0],
+  "primary_calibration_size": 32,
+  "primary": "At flip50, pairwise-sign repair32 must have paired-seed sign-accuracy gain lower 95% bound >0 against both no-exterior (gate0) and batch-LOO gate32. At intact, repair32 versus full messages must have lower 95% bound > -0.005. All three required.",
+  "repair_rule": "For each observed-observed graph edge, replace its sign by sign of zero-mean sample covariance from K independent unlabeled fields; preserve edge magnitude. Query-incident edges are not repaired and remain trusted/correct in Stage55.",
+  "scope": "Known zero-mean Gaussian family; calibration fields are extra unlabeled data and not free. No query truth, corruption label or true covariance enters repair. Relation magnitudes and graph support are assumed known; only signs may be wrong.",
+  "statistics": "Average over family/noise within each seed, then paired Student-t interval across 10 seed blocks. Calibration sizes other than 32 are exploratory."
+}

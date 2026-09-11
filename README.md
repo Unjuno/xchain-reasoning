@@ -1,5 +1,11 @@
 # XChain Reasoning
 
+## Stage 55–60 update
+
+The newest public batch moves from **suppressing unreliable exterior messages** to **repairing relation signs**. Blind finite-sample repair fails on intact graphs, but a conservative repair rule passes an independent held-out test. In the balanced-sign Gaussian family, unlabeled covariance identifies observed-node relation signs; one trusted query-incident edge resolves the remaining query-orientation ambiguity. With the same noisy anchor estimate held fixed, enabling the repaired exterior improves sign accuracy by **+2.685 percentage points** at 10% anchor error (95% paired-seed interval +2.452 to +2.919).
+
+[Stage 55–60 report](docs/STAGE55_60.md) · [Code](experiments/stage55_60/) · [Selected results](results/stage55_60/)
+
 ## Stage 52–54 update
 
 Observation-only reliability checks, a failed per-request primary test, a conditional unlabeled-calibration followup, and an exact observability limit are now documented. No query labels enter selection; extra calibration data and diagnostic costs are explicit.

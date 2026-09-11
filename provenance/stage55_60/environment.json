@@ -1,0 +1,17 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "pandas": "2.2.3",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "dtype": "float64",
+  "script_threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "clock": "not fixed or measured",
+  "training_runs": 0,
+  "quantization": null
+}

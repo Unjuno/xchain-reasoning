@@ -1,0 +1,17 @@
+{
+  "stage": 56,
+  "title": "Conservative unlabeled exterior sign repair",
+  "origin": "Stage55 full pairwise repair improved corrupted graphs but damaged intact graphs. Threshold and K were selected exploratorily on Stage55 only, then frozen here.",
+  "seeds": [66001,66002,66003,66004,66005,66006,66007,66008,66009,66010],
+  "families": ["chain","cross","tree","grid","grid_rewired"],
+  "noise_ratios": [0.25,1.0,4.0,8.0],
+  "tau": 0.05,
+  "corruptions": ["intact","flip15","flip30","flip50","coherent50"],
+  "steps": 16,
+  "calibration_size": 128,
+  "absolute_sample_correlation_threshold": 0.10,
+  "gate_candidates": [0.0,0.125,0.25,0.5,0.75,1.0],
+  "repair_rule": "Only observed-observed edges may be repaired. Flip a candidate edge sign iff its candidate sign disagrees with the zero-mean sample-correlation sign and absolute sample correlation >=0.10. Query-incident edges remain trusted/correct.",
+  "primary": "At flip50, conservative repair must have paired-seed sign-accuracy gain lower 95% bound >0 against both no-exterior and batch-128 LOO gate. At intact, repair versus full messages must have lower 95% bound > -0.005. All required.",
+  "scope": "K=128 and threshold=0.10 were chosen using Stage55 exploratory results, not Stage56 outcomes. Calibration fields are additional unlabeled information/work. Edge support/magnitudes and query-incident signs are trusted."
+}
