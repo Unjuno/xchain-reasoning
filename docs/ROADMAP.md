@@ -1,13 +1,32 @@
-# Research roadmap (not completed experiments)
+# Research roadmap
 
-Stages 52–60 established a conditional path from **relation suppression** to **relation repair** in the balanced-sign Gaussian family. The next branch should deliberately remove the assumptions that made that repair possible.
+## Roadmap v1 status: resolved with mixed outcomes
 
-Priority experiments:
+The five items defined after Stage 60 now have falsifiable experimental or theoretical dispositions. See [the resolution report](ROADMAP_RESOLUTION_2026-09-12.md).
 
-1. **Unknown support/magnitudes.** Infer whether an edge exists and its strength, not only its sign. Hold the true generating law fixed while corrupting the computational graph.
-2. **Single-request / low-calibration regime.** Stage 58 shows that repeated unlabeled fields are expensive; test active acquisition and confidence bounds that choose which relations need more evidence.
-3. **Non-gauge-balanced relations.** Use models where pairwise covariance signs do not directly encode a globally consistent node gauge, and compare repair with suppression and direct Bayesian inference.
-4. **Learned relation model.** Train a small interpretable recurrent/graph model and separate model error, relation error and inference error.
-5. **Cost accounting.** Charge calibration acquisition, eigendecomposition, repair, memory and sequential depth before making an efficiency claim.
+| Item | Disposition |
+|---|---|
+| Unknown support / magnitudes | Conditional PASS for exterior reconstruction; fully unknown query support has an identifiability limit. |
+| Single-request / low calibration | Independent unlabeled fields and reusable history work at regime level; same-request-only reliability selection is insufficient in the tested setting. |
+| Non-gauge-balanced relations | Exterior-compute mechanism reproduced in signed Ising trees and loopy graphs; structural-frustration-only gating FAILs on intrinsically frustrated correct models. |
+| Learned relation model | Model error, relation error and finite-depth inference error were separated in Stage 122. |
+| Cost accounting | Nominal-work allocation can improve accuracy while current wall-clock implementations are slower; repair setup is amortizable only across repeated requests. |
 
-Local exploratory runs belong under ignored `runs/` or `local_work/`. Promote a finding only after a frozen protocol, held-out evaluation, numerical audit, privacy review and a result-specific public change. This document is not a promise of unattended or background execution.
+### Final adaptive-compute findings
+
+- Stage 119: shallow **decision reversal** is a stronger instance-level trigger than uncertainty on average, but fails on a simple cycle.
+- Stage 120: naively stacking history and instance triggers does **not** add value over a segment-matched random control.
+- Stage 121: stale-history reset gives a small Pareto improvement under relation drift.
+- Stage 124: current subset-continuation NumPy implementation is **2.77x slower** than fixed depth 12 despite higher accuracy per nominal depth.
+- Stage 125: Stage-57-style relation repair has setup cost equivalent to roughly 653 single coefficient applications, before data-acquisition cost.
+
+## Next roadmap (v2)
+
+The original roadmap is closed. New work should be treated as a new roadmap rather than retroactively changing v1:
+
+1. Replace synthetic explicit relations with learned latent relations while retaining auditability.
+2. Design a vectorization-friendly adaptive continuation implementation and retest wall-clock efficiency.
+3. Test whether the regime/instance decomposition survives larger state spaces and learned representations.
+4. Keep exact/strong solvers as controls; do not treat extra iteration as a contribution by itself.
+
+Exploratory runs belong under ignored `runs/` or `local_work/`. Promote a finding only after a frozen protocol, held-out evaluation, numerical audit, privacy review and a result-specific public change.
