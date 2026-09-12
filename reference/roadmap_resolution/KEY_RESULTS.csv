@@ -1,0 +1,11 @@
+stage,result,value,low95,high95,note
+119,signflip_minus_uncertainty_pp,0.7028537326388873,0.6381249276430659,0.7675825376347086,instance-level PASS on average; cycle negative
+119,signflip_minus_condition_random_pp,1.269338660769992,1.1892318681477958,1.349445453392188,equal deep fraction by condition
+120,policy_minus_segment_random_pp,-0.05208333333333259,-0.1377835975496291,0.03361693088296393,FAIL/UNCERTAIN naive hierarchy
+121,reset_minus_noreset_pp,0.1171875,0.04979754040825339,0.1845774595917466,small drift-reset PASS
+122,model_error_pp,0.21647135416666669,,,K=512
+122,inference64_error_pp,0.17985026041666666,,,K=512
+122,shallow_to_deep_gain_pp,0.9765625,,,K=512
+122,relation_corruption_error_pp,3.4814453125,,,K=512
+124,runtime_ratio_signflip_fixed12,2.767333468981431,,,wall-clock FAIL in recorded NumPy CPU implementation
+125,setup_to_apply_ratio,652.951152579583,,,does not include acquisition cost for K=512 fields
