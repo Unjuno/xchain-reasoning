@@ -36,3 +36,9 @@ jobs:
       - run: python experiments/stage55_60/run58.py --quick --out runs/ci-stage58
       - run: python experiments/stage55_60/run59.py --quick --out runs/ci-stage59
       - run: python experiments/stage55_60/run60.py --quick --out runs/ci-stage60
+      - run: python experiments/roadmap_resolution/run119.py --quick --out runs/ci-stage119
+      - run: python experiments/roadmap_resolution/run120.py --quick --out runs/ci-stage120
+      - run: python experiments/roadmap_resolution/run121.py --quick --out runs/ci-stage121
+      - run: python experiments/roadmap_resolution/run122.py --quick --out runs/ci-stage122
+      - run: python experiments/roadmap_resolution/benchmark124.py --quick --out runs/ci-stage124
+      - run: python experiments/roadmap_resolution/benchmark125.py --quick --out runs/ci-stage125
