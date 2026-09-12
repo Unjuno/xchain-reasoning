@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-12",
+  "scope": "Roadmap v1 resolution stages 119-125",
+  "reproduction": {
+    "stage119": {
+      "scope": "all 10 seeds / 2520 rows",
+      "max_numeric_difference": 0.0,
+      "categorical_equal": true
+    },
+    "stage120": {
+      "scope": "portable representative seed 130001",
+      "all_columns_equal": true,
+      "max_numeric_difference": 0.0,
+      "note": "Full original 10-seed experiment retained; a full portable re-execution is not claimed here."
+    },
+    "stage121": {
+      "scope": "portable representative seed 131001",
+      "all_columns_equal": true,
+      "max_numeric_difference": 0.0,
+      "note": "Full original 10-seed experiment retained; a full portable re-execution is not claimed here."
+    },
+    "stage122": {
+      "scope": "portable representative seed 132001 / 24 rows",
+      "all_columns_equal": true,
+      "max_numeric_difference": 0.0,
+      "note": "Edge order is explicit because RNG-drawn coupling magnitudes are edge-order dependent."
+    },
+    "stage124": {
+      "scope": "runtime benchmark",
+      "note": "Timing is not expected to be bitwise reproducible; code, conditions and accuracy logic are public."
+    },
+    "stage125": {
+      "scope": "runtime/setup benchmark",
+      "note": "Timing is not expected to be bitwise reproducible; code, conditions and memory accounting are public."
+    }
+  },
+  "negative_results_preserved": [
+    "stage120 hierarchy vs segment-matched random",
+    "stage119 cycle vs uncertainty",
+    "stage124 wall-clock efficiency",
+    "stage125 setup/acquisition cost"
+  ],
+  "non_claims": [
+    "LLM benefit",
+    "semantic compression",
+    "universal graph rule",
+    "wall-clock efficiency from nominal depth alone"
+  ]
+}
