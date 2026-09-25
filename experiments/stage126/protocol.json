@@ -1,0 +1,23 @@
+{
+  "study": "Stage 126: implementation-controlled accuracy / time frontier",
+  "status_at_freeze": "unexecuted; source and protocol committed before evaluation",
+  "base_commit": "a870242b7f7853d579c39399e574fe5724ff1868",
+  "seeds": [136001,136002,136003,136004,136005,136006,136007,136008,136009,136010],
+  "families": ["barbell","tri_ladder","torus3x4","cycle","cactus","ladder","grid"],
+  "batch_sizes": [32,1024],
+  "primary_batch": 1024,
+  "beta": 0.85,
+  "intrinsic_negative_edge_probability": 0.2,
+  "exterior_corruption_probability": 0.3,
+  "observation_flip_probability": 0.2,
+  "fixed_depths": [2,4,8,12,16,24,32,64],
+  "adaptive_shallow_depth": 2,
+  "adaptive_deep_depth": 64,
+  "timing_repetitions": 5,
+  "primary": "Compiled decision-reversal policy versus the per-condition upper convex accuracy/time frontier of BOTH compiled and original NumPy fixed depths. Mean paired-seed gain >= 0.5 percentage points and its two-sided 95% Student-t lower bound > 0, with zero reference decision/selection mismatches.",
+  "secondary": ["Matched-count uncertainty and random policies", "Compiled versus NumPy decision-reversal implementation", "Batch-32 sensitivity", "Sampled truth accuracy versus exact conditional-risk scoring"],
+  "cost_scope": "Includes graph packing, input field creation, memory allocation, gate computation, subset handling, all BP updates and output production. Excludes compilation/library loading, data generation, exact scoring, artifact writing and dependency installation. Compiler setup is recorded separately. Single CPU thread; no GPU; no fast-math; float64; no quantization. Fixed policies get the same compiled optimization. No energy claim.",
+  "truth_access": "Truth is used only after predictions for scoring. Query observation is zeroed. No labels or exact posterior enter policy selection. Same selected count for all three adaptive policies.",
+  "statistical_unit": "10 seed blocks; average families within seed. Timing repetitions and fields are not independent seeds. No optional stopping or excluded negative families. The fixed frontier is a hindsight upper bound, not an implemented selector.",
+  "limitations": "One synthetic 12-node Ising configuration distribution, one runner environment, clock not pinned, no learned latent model. Runtime conclusions are implementation-specific. Earlier numerical results are not overwritten. Stage identifier does not imply prior validation."
+}
